@@ -1,0 +1,63 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MyShop.ModifyProduct"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="MY SHOP" HorizontalAlignment="Center"/>
+            <TextBlock Text="Modify Product" Margin="9,-7,0,0"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,0,14,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" Text="Product Code :" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="25,23,0,0" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Product Name :" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="25,24,0,0" Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Price :" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="25,23,0,0" Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Alert Period :" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Exp.Date :" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="0" Grid.Column="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="25,24,0,0" Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Buy / Sell :" VerticalAlignment="Top"/>
+            
+            <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Text="Quantity :" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
