@@ -14,50 +14,83 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="SteelBlue">
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY SHOP" HorizontalAlignment="Center"/>
-            <TextBlock Text="Modify Product" Margin="9,-7,0,0"/>
+        <StackPanel Background="DarkBlue">
+            <TextBlock Text="MY SHOP" FontSize="24" Grid.Row="0"  HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,0,14,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="auto"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" Text="Product Code :" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="25,23,0,0" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Product Name :" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="25,24,0,0" Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Price :" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="25,23,0,0" Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Alert Period :" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Exp.Date :" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="0" Grid.Column="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="25,24,0,0" Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Buy / Sell :" VerticalAlignment="Top"/>
-            
-            <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Text="Quantity :" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Right" Height="auto" Margin="0,-14,0,0" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Margin="12,17,0,28">
+            <TextBlock Text="Modify Product" FontSize="20" Foreground="DarkBlue" Margin="9,-7,0,0"/>
+        </StackPanel>
+        <ScrollViewer Grid.Row="2">
+            <StackPanel>
 
-        </Grid>
+                <Grid x:Name="ContentPanel"  Margin="10,0,14,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Name="ProductCode" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Product Code :" VerticalAlignment="Top"/>
+                    <TextBox Name="txtProductCode" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" TextWrapping="Wrap" Width="280"   Height="69" Margin="0,-13,5,29" Grid.RowSpan="2" />
+                    <TextBlock Grid.Row="1"></TextBlock>
+                    <TextBlock Name="ProductName" HorizontalAlignment="Left"  Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Product Name :" VerticalAlignment="Top"/>
+                    <TextBox Name="tbxProductName" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" TextWrapping="Wrap" Width="280" Height="78" Margin="5,25.646,5,41.707" Grid.RowSpan="3"/>
+                    <TextBlock Grid.Row="3"></TextBlock>
+                    <TextBlock Name="Price" HorizontalAlignment="Left"  Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Price :" VerticalAlignment="Top"/>
+                    <TextBox Name="txtPrice"  Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" TextWrapping="Wrap" Width="280" Height="71" Margin="5,28.084,5,35.831" Grid.RowSpan="3"/>
+                    <TextBlock Grid.Row="5"></TextBlock>
+                    <TextBlock Name="QtyOnHand" HorizontalAlignment="Left" Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Text="Quantity On Hand:" VerticalAlignment="Top"/>
+                    <TextBox Name="txtQtyOnHAnd"  Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" TextWrapping="Wrap" Width="280" Height="71" Margin="5,33.329,5,35.924" Grid.RowSpan="3"/>
+                    <TextBlock Grid.Row="7"></TextBlock>
+                    <TextBlock Name="ExpDate" HorizontalAlignment="Left"  Grid.Row="8" Grid.Column="0" TextWrapping="Wrap" Text="Exp.Date :" VerticalAlignment="Top"/>
+                    <TextBox Name="txtExpDate"  Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" TextWrapping="Wrap" Width="280" Height="71" Margin="5,35.891,5,36.016" Grid.RowSpan="3"/>
+                    <TextBlock Grid.Row="9"></TextBlock>
+                    <TextBlock Name="AlertPeriod" HorizontalAlignment="Left"  Grid.Row="10" Grid.Column="0" TextWrapping="Wrap" Text="Alert Period :" VerticalAlignment="Top"/>
+                    <TextBox Name="txtAlertPeriod"  Grid.Row="9" Grid.Column="1" VerticalAlignment="Center" TextWrapping="Wrap" Width="280" Height="71" Margin="5,34.712,5,37.899" Grid.RowSpan="3"/>
+                    <TextBlock Grid.Row="11"></TextBlock>
+                    <TextBlock Name="BuyOrSell" HorizontalAlignment="Left"  Grid.Row="12" Grid.Column="0" TextWrapping="Wrap" Text="Buy / Sell :" VerticalAlignment="Top"/>
+                    <TextBox Name="txtBuyOrSell"  Grid.Row="11" Grid.Column="1" VerticalAlignment="Center" TextWrapping="Wrap" Width="280" Height="73" Margin="5,32.702,5,39.132" Grid.RowSpan="3"/>
+                    <TextBlock Grid.Row="13"></TextBlock>
+                    <TextBlock Name="Quanity" HorizontalAlignment="Left" Grid.Row="14" Grid.Column="0" TextWrapping="Wrap" Text="Quantity :" VerticalAlignment="Top"/>
+                    <TextBox Name="txtQuantity"  Grid.Row="13" Grid.Column="1" VerticalAlignment="Center" TextWrapping="Wrap" Width="280" Height="72" Margin="5,34.362,5,-1.862" Grid.RowSpan="2"/>
+                </Grid>
+                
+
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Grid.Row="4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Name="btnOk" Grid.Column="0" Content="ok" Click="btnOk_Click"/>
+                <Button Name="btnCancel" Grid.Column="1" Content="Cancel" Click="btnCancel_Click"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 
 </phone:PhoneApplicationPage>

@@ -1,0 +1,12 @@
+﻿<xapCache source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Bin\Debug\MyShop_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="7/13/2016 12:35:46 PM">
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\obj\Debug\MyShop.dll" archivePath="MyShop.dll" lastWriteTime="7/13/2016 12:35:45 PM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="7/5/2016 10:24:54 AM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="7/5/2016 10:24:54 AM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="7/5/2016 10:24:54 AM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="7/5/2016 10:24:54 AM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="7/5/2016 10:24:54 AM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/11/2016 9:34:12 PM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="7/5/2016 10:24:54 AM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="7/5/2016 10:24:54 AM" />
+  <file source="F:\projects\MyShop-windowsPhoneApp\MyShop\MyShop\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="7/11/2016 9:34:13 PM" />
+</xapCache>

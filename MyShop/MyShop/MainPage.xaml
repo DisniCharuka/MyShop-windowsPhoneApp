@@ -14,7 +14,7 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="SteelBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -29,9 +29,12 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="LOGIN" HorizontalAlignment="Center" Margin="167,310,171,314" VerticalAlignment="Center"/>
+            <Button Name="btnLogin" Content="LOGIN" HorizontalAlignment="Center" Margin="167,310,171,314" VerticalAlignment="Center" Click="btnLogin_Click"/>
 
         </Grid>
-  </Grid>
+        <Button Content="Test DB" Name="btnTestDb" HorizontalAlignment="Left" Margin="31,176,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btnTestDb_Click"/>
+        <Button Content="Test1" Name="Test1" Margin="214,176,92,448" Grid.Row="1" Click="Test1_Click" />
+        <TextBox Name="txtTest" HorizontalAlignment="Left" Height="72" Margin="14,83,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="456"/>
+    </Grid>
 
 </phone:PhoneApplicationPage>

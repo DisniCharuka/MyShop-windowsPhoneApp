@@ -8,11 +8,16 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using MyShop.Resources;
+using System.Data;
+using System.IO;
+
+
 
 namespace MyShop
 {
     public partial class MainPage : PhoneApplicationPage
     {
+      //  DatabaseManagement databaseManagement;
         // Constructor
         public MainPage()
         {
@@ -20,6 +25,23 @@ namespace MyShop
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+           NavigationService.Navigate(new Uri("/ModifyProduct.xaml", UriKind.Relative));
+        }
+
+        private void btnTestDb_Click(object sender, RoutedEventArgs e)
+        {
+            //SQLiteAsyncConnection connection = new SQLiteAsyncConnection("dboMyShop.db");
+            //databaseManagement = new DatabaseManagement();
+
+        }
+
+        private void Test1_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         // Sample code for building a localized ApplicationBar
